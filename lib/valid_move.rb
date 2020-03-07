@@ -1,8 +1,8 @@
-def valid_move?(board, index) 
+def valid_move?(board, index)
   index !< 0 && index !> 8 & !position_taken(board, index)
-end 
+end
 
 def position_taken?(board, index)
-   board[index] != " " || board[index] != "" || board[index] == nil 
+   board[index] != " " || board[index] != "" || board[index] == nil
    board[index] == "X" || board[index] == "O"
 end
